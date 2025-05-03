@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 const Banner = () => {
   return (
     <section className="min-h-[calc(100vh-76px)]">
-      <div className="flex flex-col md:flex-row-reverse">
+      <div className="flex flex-col lg:flex-row-reverse">
         <Image
           height={100}
           width={100}
@@ -63,7 +63,7 @@ const Banner = () => {
               <MdEmail className="hover:text-[#4CAF50]" />
             </a>
           </div>
-          <Button className="w-52">
+          <Button className="w-52 bg-[#4CAF50] dark:bg-[#4CAF50] text-white dark:text-white">
             <a
               href="https://drive.google.com/file/d/10x2tnv4gqGAuG0gZIXTAiqQYj3yj4NRy/view?usp=sharing"
               target="_blank"

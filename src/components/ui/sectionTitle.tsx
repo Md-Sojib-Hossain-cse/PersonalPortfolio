@@ -3,7 +3,7 @@ import { GiBurningRoundShot } from "react-icons/gi";
 const SectionTitle = ({ heading }: { heading: string }) => {
   return (
     <div className="py-3 md:py-5 lg:py-8 text-center">
-      <h3 className="flex gap-2 justify-center items-center text-lg font-medium text-white">
+      <h3 className="flex gap-2 justify-center items-center text-lg font-medium text-black dark:text-white">
         <GiBurningRoundShot className="text-[#FF4500]" />
         {heading}
       </h3>
