@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { ModeToggle } from "../ui/mode-toggler";
+import { FaDownload } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,25 +38,31 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 items-center">
           <Link
-            href="#about"
+            href="/"
+            className="hover:text-emerald-500 font-medium dark:text-white"
+          >
+            Home
+          </Link>
+          <Link
+            href="/#about"
             className="hover:text-emerald-500 font-medium dark:text-white"
           >
             About
           </Link>
           <Link
-            href="#projects"
+            href="/projects"
             className="hover:text-emerald-500 font-medium dark:text-white"
           >
             Projects
           </Link>
           <Link
-            href="#skills"
+            href="/#skills"
             className="hover:text-emerald-500 font-medium dark:text-white"
           >
             Skills
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="hover:text-emerald-500 font-medium dark:text-white"
           >
             Contact
@@ -72,12 +79,13 @@ const Navbar = () => {
             ></button>
             {isDropdownOpen && (
               <div className="absolute right-0 mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-md w-40 py-2 z-10">
-                <Link
-                  href="/resume.pdf"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white"
+                <a
+                  href="https://drive.google.com/file/d/10x2tnv4gqGAuG0gZIXTAiqQYj3yj4NRy/view?usp=sharing"
+                  target="_blank"
+                  className="gap-2 block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white"
                 >
-                  Download Resume
-                </Link>
+                  Check Out My CV <FaDownload />
+                </a>
                 <Link
                   href="mailto:arifulislamofficial26@gmail.com"
                   className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white"

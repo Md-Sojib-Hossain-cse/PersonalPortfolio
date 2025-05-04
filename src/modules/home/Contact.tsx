@@ -17,12 +17,15 @@ import { Input } from "@/components/ui/input";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { TContactForm } from "@/types";
 import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
 
 const Contact = () => {
   const form = useForm<TContactForm>();
 
   const onSubmit: SubmitHandler<TContactForm> = (values) => {
-    console.log(values);
+    if (values.name && values.email && values.message) {
+      toast("Thanks for your amazing Feedback😀");
+    }
   };
   return (
     <section id="contact" className="mt-6">

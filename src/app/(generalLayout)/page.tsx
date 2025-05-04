@@ -2,7 +2,7 @@ import About from "@/modules/home/About";
 import Banner from "@/modules/home/Banner";
 import Blogs from "@/modules/home/Blogs";
 import Contact from "@/modules/home/Contact";
-import Projects from "@/modules/home/Projects";
+import ProjectSection from "@/modules/home/Project";
 import WhyShouldHireMe from "@/modules/home/WhyHireMe";
 
 const HomePage = () => {
@@ -11,7 +11,7 @@ const HomePage = () => {
       <Banner></Banner>
       <About></About>
       <WhyShouldHireMe></WhyShouldHireMe>
-      <Projects></Projects>
+      <ProjectSection></ProjectSection>
       <Blogs></Blogs>
       <Contact></Contact>
     </div>

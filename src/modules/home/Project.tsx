@@ -1,26 +1,19 @@
-"use client";
-
 import { FaDog, FaEye } from "react-icons/fa6";
-import FelizTailsLogo from "@/assets/felizTailsLogo.png";
+import { RiFileList3Line } from "react-icons/ri";
 import HireEchoLogo from "@/assets/hireEchoLogoPng.png";
+import FelizTailsLogo from "@/assets/felizTailsLogo.png";
 import SectionTitle from "@/components/ui/sectionTitle";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Button } from "@/components/ui/button";
-import { useEffect } from "react";
+import Link from "next/link";
 
-const Projects = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
+const ProjectSection = () => {
   return (
     <section id="projects" className="px-4 md:px-6">
       <SectionTitle heading="Projects"></SectionTitle>
       <div className="grid gap-4 md:gap-6">
         <div className="w-full flex flex-col md:flex-row gap-2 md:gap-3 lg:gap-4 border border-[#F16543] rounded-lg p-4 md:p-6">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center min-w-36">
             <Image
               src={FelizTailsLogo}
               alt="felizTailsLogo"
@@ -98,8 +91,17 @@ const Projects = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="200"
-              className="pt-4 md:pt-6"
+              className="pt-4 md:pt-6 space-x-6"
             >
+              <Button className="w-32 bg-[#4CAF50] dark:bg-[#4CAF50] text-white dark:text-white">
+                <Link
+                  href="/projects/feliz-tails-client"
+                  target="_blank"
+                  className="flex gap-1 items-center"
+                >
+                  View Details <RiFileList3Line />
+                </Link>
+              </Button>
               <Button className="w-32 bg-[#4CAF50] dark:bg-[#4CAF50] text-white dark:text-white">
                 <a
                   href="https://feliz-tails.web.app"
@@ -113,7 +115,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="w-full flex flex-col md:flex-row gap-2 md:gap-3 lg:gap-4 border border-[#F16543] rounded-lg p-4 md:p-6">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center min-w-36">
             <Image
               src={HireEchoLogo}
               alt="felizTailsLogo"
@@ -192,8 +194,16 @@ const Projects = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="200"
-              className="pt-4 md:pt-6"
+              className="pt-4 md:pt-6 space-x-6"
             >
+              <Button className="w-32 bg-[#4CAF50] dark:bg-[#4CAF50] text-white dark:text-white">
+                <Link
+                  href="/projects/hire-echo-client"
+                  className="flex gap-1 items-center"
+                >
+                  View Details <RiFileList3Line />
+                </Link>
+              </Button>
               <Button className="w-32 bg-[#4CAF50] dark:bg-[#4CAF50] text-white dark:text-white">
                 <a
                   href="https://hire-echo.web.app"
@@ -207,8 +217,15 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <div className="py-6 md:py-8 flex justify-center items-center">
+        <Button className="w-32 mx-auto bg-[#4CAF50] dark:bg-[#4CAF50] text-white dark:text-white">
+          <Link href="/projects" className="flex gap-1 items-center">
+            See More...
+          </Link>
+        </Button>
+      </div>
     </section>
   );
 };
 
-export default Projects;
+export default ProjectSection;

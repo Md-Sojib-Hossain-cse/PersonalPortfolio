@@ -17,7 +17,7 @@ const skills = [
   { type: "Firebase", level: 80 },
   { type: "ExpressJS", level: 70 },
   { type: "MongoDB", level: 65 },
-  { type: "Github", level: 85 },
+  { type: "Github", level: 75 },
 ];
 
 const colors = {
