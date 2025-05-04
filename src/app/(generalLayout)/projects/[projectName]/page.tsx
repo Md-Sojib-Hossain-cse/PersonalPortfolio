@@ -1,6 +1,18 @@
 import SectionTitle from "@/components/ui/sectionTitle";
 import Image from "next/image";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ projectName: string }>;
+}) {
+  const { projectName } = await params;
+
+  return {
+    title: `Project | ${projectName}`,
+  };
+}
+
 const ProjectDetailsPage = async ({
   params,
 }: {

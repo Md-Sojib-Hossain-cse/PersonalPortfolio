@@ -9,7 +9,12 @@ import {
 } from "@/components/ui/card";
 import SectionTitle from "@/components/ui/sectionTitle";
 import { TGithubRepo } from "@/types";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Portfolio | Projects",
+};
 
 const ProjectsPage = async () => {
   const res = await fetch(
