@@ -75,7 +75,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-lg lg:text-xl font-semibold text-[#4CAF50]">
-                    0+
+                    1+
                   </p>
                   <h6 className="text-lg lg:text-xl font-medium">
                     Year Of Experience

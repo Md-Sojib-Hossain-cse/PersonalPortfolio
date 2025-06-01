@@ -14,10 +14,15 @@ const skills = [
   { type: "TailwindCSS", level: 90 },
   { type: "JavaScript", level: 75 },
   { type: "ReactJS", level: 75 },
+  { type: "Redux", level: 50 },
+  { type: "NextJs", level: 30 },
+  { type: "TypeScript", level: 80 },
   { type: "Firebase", level: 80 },
   { type: "ExpressJS", level: 70 },
   { type: "MongoDB", level: 65 },
+  { type: "Mongoose", level: 75 },
   { type: "Github", level: 75 },
+  { type: "Vercel", level: 60 },
 ];
 
 const colors = {

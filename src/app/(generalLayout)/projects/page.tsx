@@ -14,6 +14,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Portfolio | Projects",
+  description:
+    "Discover detailed information about this GitHub project, including its description, language, stars, forks, and live site — all dynamically fetched and displayed in real-time.",
 };
 
 const ProjectsPage = async () => {
